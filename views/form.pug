@@ -1,0 +1,10 @@
+extends layout
+
+block content
+  h1 Add a New Message
+  form(method="POST" action="/new")
+    label(for="name") Name
+    input(type="text" id="name" name="name")
+    label(for="") Messsage
+    input(type="text" id="message" name="message")
+    button(type="submit") Submit
